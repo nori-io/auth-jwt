@@ -87,14 +87,14 @@ func (p plugin) Meta() meta.Meta {
 	return &meta.Data{
 		ID: meta.ID{
 			ID:      "nori/auth/jwt",
-			Version: "1.0",
+			Version: "1.0.0",
 		},
 		Author: meta.Author{
 			Name: "Nori",
 			URI:  "https://nori.io",
 		},
 		Core: meta.Core{
-			VersionConstraint: ">=1.0, <2.0",
+			VersionConstraint: ">=1.0.0, <2.0.0",
 		},
 		Dependencies: []meta.Dependency{},
 		Description: meta.Description{
