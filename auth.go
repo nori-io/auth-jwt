@@ -14,19 +14,18 @@
 package main
 
 import (
+
 	"context"
-
-	"github.com/dgrijalva/jwt-go"
-
 	"crypto/ecdsa"
 	"crypto/rsa"
 	"crypto/x509"
 	"encoding/pem"
 	"errors"
+	"io/ioutil"
 	"strings"
 	"time"
 
-	"io/ioutil"
+	"github.com/dgrijalva/jwt-go"
 
 	cfg "github.com/nori-io/nori-common/config"
 
