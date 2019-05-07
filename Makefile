@@ -6,6 +6,7 @@ BINARY_NAME=nori_auth.so
 ifndef PLUGIN_DIR # to allow PLUGIN_DIR to be given as args (see CI)
 	DIR=$(shell pwd)
 	PLUGIN_DIR=$(DIR)/bin
+	endif
 
 .PHONY: all build clean
 
