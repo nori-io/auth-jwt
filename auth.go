@@ -14,7 +14,6 @@
 package main
 
 import (
-
 	"context"
 	"crypto/ecdsa"
 	"crypto/rsa"
@@ -30,9 +29,9 @@ import (
 	cfg "github.com/nori-io/nori-common/config"
 
 	"github.com/nori-io/nori-common/endpoint"
-	"github.com/nori-io/nori-common/interfaces"
 	"github.com/nori-io/nori-common/meta"
 	noriPlugin "github.com/nori-io/nori-common/plugin"
+	"github.com/nori-io/nori-interfaces/interfaces"
 )
 
 type plugin struct {
@@ -99,7 +98,7 @@ func (p plugin) Meta() meta.Meta {
 		Description: meta.Description{
 			Name: "Nori: Auth Interface",
 		},
-		Interface: meta.Auth,
+		Interface: interfaces.AuthInterface,
 		License: meta.License{
 			Title: "",
 			Type:  "GPLv3",
